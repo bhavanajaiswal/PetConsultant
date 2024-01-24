@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!.................................Adding the bootstrap.......................................>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+<!............................... title of the website..................................>
+  <title >Pet Consulting</title>
+</head>
+
+ 
+
+ 
+<!........................................add here as well the bootstrap....................................>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<!..................................main heading..................................................................>
+
+    <header style="background-color: #159b9b; padding: 20px;">
+        <div style="max-width: 960px; margin: 0 auto;">
+          <h1 style="font-size: 38px; font-family: 'Georgia', serif; font-style: italic; color: rgb(249, 251, 253); letter-spacing: 2px; text-align: left; text-transform: uppercase; text-shadow: 2px 2px 4px rgb(251, 250, 250);">
+            &#x1F43E; PetConsulting &#x1F43E;
+          </h1>
+          
+ 
+  <br>
+
+<!.................................................. menu's.....................................>
+            <nav>
+                <ul style="list-style-type: none; margin-top: 20px; text-align: center; white-space: nowrap;">
+                  <span style="display: inline-block; margin-right: 20px;"><li><a href="index.html" style="text-decoration: none; color: #f3eaea; font-weight: bold; font-size: 18px;">Home</a></li></span>
+                    <span style="display: inline-block; margin-right: 20px;"><li><a href="consultant.html" style="text-decoration: none; color: #f5efef; font-weight: bold; font-size: 18px;">Consult a Vet</a></li></span>
+                    <span style="display: inline-block; margin-right: 20px;"><li><a href="appointment.html" style="text-decoration: none; color: #f2ebeb; font-weight: bold; font-size: 18px;">Appointment</a></li></span>
+
+
+
+<!..................................................In our services added the dropdown menu in that.................................................>
+ 
+<span style="display: inline-block; margin-right: 20px;" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+  <li>
+      <a href="ourservices.html" style="text-decoration: none; color: #f1eded; font-weight: bold; font-size: 18px;">Our Services &#9662;</a>
+      <ul class="dropdown" style="list-style-type: none; padding: 0; display: none; position: absolute; background-color: #10b8a7; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;">
+          <li><a href="ourservices_subpage_walking.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;">Walking</a></li>
+          <li><a href="ourservices_subpage_behaviourist.html" style="text-decoration: none; color: #f0f5f6; font-weight: bold; font-size: 16px;"> Behaviourist</a></li>
+          <li><a href="ourservices_subpage_homeservices.html" style="text-decoration: none; color: #f8ffff; font-weight: bold; font-size: 16px;">Home Service </a></li>
+          <li><a href="ourservices_subpage_emergencycare.html" style="text-decoration: none; color: #f1f4f4; font-weight: bold; font-size: 16px;">Emergency care </a></li>
+          <li><a href="ourservices_subpage_vetvideo.html" style="text-decoration: none; color: #fcffff; font-weight: bold; font-size: 16px;"> Vet Vedio</a></li>
+          <li><a href="ourservices_subpage_diet.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Diet</a></li>
+          <li><a href="ourservices_subpage_vaccination.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Vaccination</a></li>
+          <li><a href="ourservices_subpage_medicine.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;">Grooming </a></li>
+          <li><a href="ourservices_subpage_medicine.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Medicine</a></li>
+          <li><a href="ourservices_subpage_diagnostic.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Diagnostic</a></li>
+          <li><a href="" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> </a></li>
+      </ul>
+  </li>
+</span>
+
+
+<style>
+  /* Your existing CSS for hover effect */
+  nav ul li a {
+      position: relative;
+      text-decoration: none;
+  }
+
+  nav ul li a:hover {
+      color: #fff;
+      animation: blink-animation 0.6s infinite;
+      text-decoration: none;
+  }
+
+  nav ul li a:hover:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background-color: #fff;
+  }
+
+  /* Additional CSS for the dropdown */
+  .dropdown li {
+      display: block;
+  }
+
+  .dropdown li:hover {
+      background-color: #ddd; /* Change background color on hover */
+  }
+</style>
+
+<script>
+  // JavaScript for handling dropdown display
+  function showDropdown() {
+      var dropdown = document.querySelector('.dropdown');
+      dropdown.style.display = 'block';
+  }
+
+  function hideDropdown() {
+      var dropdown = document.querySelector('.dropdown');
+      dropdown.style.display = 'none';
+  }
+</script>
+
+                    
+
+
+
+<!....................................... End of the dropdown..............................>
+
+<!................................................ Pharmacy sub cards.............................................>
+
+<span style="display: inline-block; margin-right: 20px;"><li><a href="pharmacy.html" style="text-decoration: none; color: #efeded; font-weight: bold; font-size: 18px;">Pharmacy</a></li></span>
+
+
+
+<!............................................... End of the subcard related to medicine.........................>
+
+
+
+
+
+
+                    <span style="display: inline-block; margin-right: 20px;"><li><a href="consultbybreed.html" style="text-decoration: none; color: #efeded; font-weight: bold; font-size: 18px;">Consult By Breed</a></li></span>
+                    <span style="display: inline-block;"><li><a href="aboutus.html" style="text-decoration: none; color: #f2ebeb; font-weight: bold; font-size: 18px;">About Us</a></li></span>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <style>
+    /* CSS for hover effect */
+    nav ul li a {
+        position: relative; /* Set position for the underline effect */
+        text-decoration: none; /* Remove default underline */
+    }
+    
+    nav ul li a:hover {
+        color: #fff; /* Change text color to white on hover */
+        animation: blink-animation 0.6s infinite; /* Apply blinking effect */
+        text-decoration: none; /* Remove default underline on hover */
+    }
+    
+    nav ul li a:hover:after {
+        content: ''; /* Add the underline effect */
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: #fff; /* Color of the underline */
+    }
+    </style>
+
+
+<!---------------------------------------------End of drop down---------------------------------------------------------------------->
+
+
+<!------------------------------------------------Body of the website started from here-------------------------------------------------->
+<body>
+
+
+
+
+
+
+
+
+<!--------------------------------------------------------------------Dog's breed------------------------------------------------------>
+  <div style="display: flex; justify-content: center;">
+
+    <!-- Card 1 -->
+    <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+      <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+        <img src="images/img_for_consultbybreed_labradorretriever_dog.webp" alt="Image 1" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+        <a href="consultbybreed_subpage_labradorretriver.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Labrador Retriever</h3></a>
+        <p style="margin: 5px;">Top Breed</p>
+      </div>
+    </div>
+  
+    <!-- Card 2 -->
+    <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+      <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+        <img src="images/img_for_consultbybreed_germanshephard_dog.webp" alt="Image 2" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+        <a href="consultbybreed_subpage_germanshephard.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">German Shepherd</h3></a>
+        <p style="margin: 5px;">Top Breed</p>
+      </div>
+    </div>
+  
+    <!-- Card 3 -->
+    <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+      <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+        <img src="images/img_for_consultbybreed_Golden-retriever-dog.jpg" alt="Image 3" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+        <a href="consultbybreed_subpage_goldenretriver.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Golden Retriever</h3></a>
+        <p style="margin: 5px;">Top Breed</p>
+      </div>
+    </div>
+  
+  </div>
+  
+  <script>
+    function redirectToPage(page) {
+      // Redirect to the specified page
+      window.location.href = page;
+    }
+  
+    // Add hover effect
+    const cards = document.querySelectorAll('[style*="width: 90vw"]');
+    cards.forEach(card => {
+      card.addEventListener('mouseover', () => {
+        card.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+      });
+      card.addEventListener('mouseout', () => {
+        card.style.boxShadow = 'none';
+      });
+    });
+  </script>
+  
+  
+<!--------------------------------------------------------------------------Cat's Breed----------------------------------------->
+<div style="display: flex; justify-content: center;">
+
+  <!-- Card 1 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src="images/img_for_consultbybreed_persian_cat.webp" alt="Image 1" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_persiancat.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Persian Cat</h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src="images/img_for_consultbybreed_siamese_cat.jpeg" alt="Image 2" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_siamesecat.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Siamese Cat </h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src="images/img_for_consultbybreed_mainecoon_cat.jpg" alt="Image 3" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_mainecooncat.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">MaineCoon Cat </h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function redirectToPage(page) {
+    // Redirect to the specified page
+    window.location.href = page;
+  }
+
+  // Add hover effect
+  const cards = document.querySelectorAll('[style*="width: 90vw"]');
+  cards.forEach(card => {
+    card.addEventListener('mouseover', () => {
+      card.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+    });
+    card.addEventListener('mouseout', () => {
+      card.style.boxShadow = 'none';
+    });
+  });
+</script>
+
+
+
+<!----------------------------------------------------------------------Fish Breed------------------------------------------------------------------------->
+<div style="display: flex; justify-content: center;">
+
+  <!-- Card 1 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src="images/img_for_consultbybreed_betta_fish.jpg" alt="Image 1" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_bettafish.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Betta Fish</h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src="images/img_for_consultbybreed_gold_fish.jpg" alt="Image 2" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_goldfish.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"> Gold Fish</h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src="images/img_for_consultbybreed_neontetra_fish.jpeg" alt="Image 3" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_neontetra.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Neon Tetra Fish </h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function redirectToPage(page) {
+    // Redirect to the specified page
+    window.location.href = page;
+  }
+
+  // Add hover effect
+  const cards = document.querySelectorAll('[style*="width: 90vw"]');
+  cards.forEach(card => {
+    card.addEventListener('mouseover', () => {
+      card.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+    });
+    card.addEventListener('mouseout', () => {
+      card.style.boxShadow = 'none';
+    });
+  });
+</script>
+
+
+
+
+
+<!-----------------------------------------------------------------Parrot's Breed------------------------------------------------------------------------------>
+<div style="display: flex; justify-content: center;">
+
+  <!-- Card 1 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src="images/img_for_consultbybreed_africangray_parrot.jpg" alt="Image 1" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_africangrayparrot.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">African Gray Parrot </h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src="images/img_for_consultbybreed_budgerigar_parrot.jpg" alt="Image 2" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_budgerigarparrot.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Budgerigar Parrot </h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src="images/img_for_consultbybreed_amazon_parrot.webp" alt="Image 3" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_amazonparrot.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Amazon Parrot</h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function redirectToPage(page) {
+    // Redirect to the specified page
+    window.location.href = page;
+  }
+
+  // Add hover effect
+  const cards = document.querySelectorAll('[style*="width: 90vw"]');
+  cards.forEach(card => {
+    card.addEventListener('mouseover', () => {
+      card.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+    });
+    card.addEventListener('mouseout', () => {
+      card.style.boxShadow = 'none';
+    });
+  });
+</script>
+
+
+
+
+<!---------------------------------------------------------------------Bird's Breed-------------------------------------------------------------------------->
+<div style="display: flex; justify-content: center;">
+
+  <!-- Card 1 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src="images/img_for_consultbybreed_cocktail_bird.jpg" alt="Image 1" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_cocktailbird.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Cocktail Bird</h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src="images/img_for_consultbybreed_exotic_pegion.webp" alt="Image 2" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_exoticpegionbird.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Love Bird</h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src="images/img_for_consultbybreed_canary_bird.jpg" alt="Image 3" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_canarybird.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Canary Bird</h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function redirectToPage(page) {
+    // Redirect to the specified page
+    window.location.href = page;
+  }
+
+  // Add hover effect
+  const cards = document.querySelectorAll('[style*="width: 90vw"]');
+  cards.forEach(card => {
+    card.addEventListener('mouseover', () => {
+      card.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+    });
+    card.addEventListener('mouseout', () => {
+      card.style.boxShadow = 'none';
+    });
+  });
+</script>
+
+
+
+
+
+<!----------------------------------------------------------------------Goat Breed------------------------------------------------------------------------->
+
+<div style="display: flex; justify-content: center;">
+
+  <!-- Card 1 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src="images/img_for_consultbybreed_boar_goat.jpg" alt="Image 1" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_boargoat.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Boar Goat</h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src="images/img_for_consultbybreed_nubian_goat.webp" alt="Image 2" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_nubiangoat.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Nubian Goat</h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src="images/img_for_consultbybreed_saanen_goat.jpg" alt="Image 3" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_saanengoat.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Saanen Goat</h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function redirectToPage(page) {
+    // Redirect to the specified page
+    window.location.href = page;
+  }
+
+  // Add hover effect
+  const cards = document.querySelectorAll('[style*="width: 90vw"]');
+  cards.forEach(card => {
+    card.addEventListener('mouseover', () => {
+      card.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+    });
+    card.addEventListener('mouseout', () => {
+      card.style.boxShadow = 'none';
+    });
+  });
+</script> 
+
+
+<!-----------------------------------------------------------------------Sheep's Breed------------------------------------------------------------------------>
+
+<div style="display: flex; justify-content: center;">
+
+  <!-- Card 1 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src="images/img_for_consultbybreed_suffolk_sheep.jpg" alt="Image 1" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_suffolkgoat.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"> Suffolk Sheep</h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src="images/img_for_consultbybreed_merino_sheep.jpg" alt="Image 2" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_merinogoat.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Merino Sheep </h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src="images/img_for_consultbybreed_dorset_sheep.jpeg" alt="Image 3" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_dorsetgoat.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Dorset Sheep</h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function redirectToPage(page) {
+    // Redirect to the specified page
+    window.location.href = page;
+  }
+
+  // Add hover effect
+  const cards = document.querySelectorAll('[style*="width: 90vw"]');
+  cards.forEach(card => {
+    card.addEventListener('mouseover', () => {
+      card.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+    });
+    card.addEventListener('mouseout', () => {
+      card.style.boxShadow = 'none';
+    });
+  });
+</script>
+
+
+
+
+
+
+<!-------------------------------------------------------------------Chicken Breed---------------------------------------------------------------------------->
+
+<div style="display: flex; justify-content: center;">
+
+  <!-- Card 1 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src="images/img_for_consultbybreed_rhodeislandred_chicken.jpeg" alt="Image 1" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_rhodeislandredchicken.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Rhode Island Red </h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src="images/img_for_consultbybreed_leghorn_chicken.jpg" alt="Image 2" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_leghornchicken.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Leghorn Chicken</h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src="images/img_for_consultbybreed_plymouthrock_chicken.jpg" alt="Image 3" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_plymouthrockgoat.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Plymouth Rock Chicken</h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function redirectToPage(page) {
+    // Redirect to the specified page
+    window.location.href = page;
+  }
+
+  // Add hover effect
+  const cards = document.querySelectorAll('[style*="width: 90vw"]');
+  cards.forEach(card => {
+    card.addEventListener('mouseover', () => {
+      card.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+    });
+    card.addEventListener('mouseout', () => {
+      card.style.boxShadow = 'none';
+    });
+  });
+</script>
+
+
+<!---------------------------------------------------------------Horse Breed-------------------------------------------------------------------------------->
+
+<div style="display: flex; justify-content: center;">
+
+  <!-- Card 1 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src="images/img_for_consultbybreed_arabian_horse.png" alt="Image 1" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_arabianhorse.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Arabian Horse </h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src="images/img_for_consultbybreed_thorough_horse.jpg" alt="Image 2" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_thoroughbredhorse.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Thouough Horse </h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src="images/img_for_consultbybreed_quatar_horse.jpg" alt="Image 3" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_quaterhorse.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Quater Horse </h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function redirectToPage(page) {
+    // Redirect to the specified page
+    window.location.href = page;
+  }
+
+  // Add hover effect
+  const cards = document.querySelectorAll('[style*="width: 90vw"]');
+  cards.forEach(card => {
+    card.addEventListener('mouseover', () => {
+      card.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+    });
+    card.addEventListener('mouseout', () => {
+      card.style.boxShadow = 'none';
+    });
+  });
+</script>
+
+
+<!---------------------------------------------------------------Rabbit's Breed-------------------------------------------------------------------------------->
+
+<div style="display: flex; justify-content: center;">
+
+  <!-- Card 1 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src="images/img_for_consultbybreed_hollandlop_rabbit.webp" alt="Image 1" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_hollandloprabbit.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Holland Lop Rabbit </h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src="images/img_for_consultbybreed_netherlanddwarf_rabbit.webp" alt="Image 2" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_netherlanddwarfrabbit.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Netherland Dwarf Rabbit </h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src="images/img_for_consultbybreed_flemishgiant_rabbit.avif" alt="Image 3" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_flemishgiantrabbit.html" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Flemish Giant Rabbit
+      </h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function redirectToPage(page) {
+    // Redirect to the specified page
+    window.location.href = page;
+  }
+
+  // Add hover effect
+  const cards = document.querySelectorAll('[style*="width: 90vw"]');
+  cards.forEach(card => {
+    card.addEventListener('mouseover', () => {
+      card.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+    });
+    card.addEventListener('mouseout', () => {
+      card.style.boxShadow = 'none';
+    });
+  });
+</script>
+
+
+
+<!----------------------------------------------------------------------Rabbit's Breed-------------------------------------------------------------------------><div style="display: flex; justify-content: center;">
+
+  <!-- Card 1 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src=" " alt="Image 1" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href="consultbybreed_subpage_ holl" style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"> </h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src=" " alt="Image 2" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href=" " style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"> </h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div style="width: 90vw; max-width: 400px; border-radius: 10px; margin: 10px; overflow: hidden; text-align: center; transition: box-shadow 0.3s;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 10px;">
+      <img src=" " alt="Image 3" style="width: 100%; height: 250px; border-radius: 10px 10px 0 0;">
+      <a href=" " style="text-decoration: none; color: black;"><h3 style="margin: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"> </h3></a>
+      <p style="margin: 5px;">Top Breed</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function redirectToPage(page) {
+    // Redirect to the specified page
+    window.location.href = page;
+  }
+
+  // Add hover effect
+  const cards = document.querySelectorAll('[style*="width: 90vw"]');
+  cards.forEach(card => {
+    card.addEventListener('mouseover', () => {
+      card.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+    });
+    card.addEventListener('mouseout', () => {
+      card.style.boxShadow = 'none';
+    });
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
